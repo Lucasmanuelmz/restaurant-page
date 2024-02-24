@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'NotoSerif';
+    src:url('./fonts/NotoSerif-VariableFont_wdth\,wght.ttf');
+        
+}
+
+@font-face {
+    font-family: 'PlayfairDisplaySC-Bold' ;
+    src: url('./fonts/PlayfairDisplaySC-Bold.ttf'),
+    url('./fonts/PlayfairDisplaySC-BoldItalic.ttf'),
+    url('./fonts/PlayfairDisplaySC-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'AkayaTelivigala-Regular';
+    src: url('./fonts/AkayaTelivigala-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'NotoSerif';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    background-color: #064e3b;
+    opacity: .9;
+    top: 0;
+    left: 0;
+    padding: 0 150px;
+    z-index: 3;
+    box-shadow: 2px 2px 2px #131212;
+}
+
+button {
+    width: 100px;
+    height: 45px;
+    background-color: #064e3b;
+    border-top: #e7dcd6 2px solid;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-left: #e7dcd6 1px solid;
+    border-right: #e7dcd6 1px solid;
+    border-bottom: none;
+    font-size: 18px;
+    color: #e7dcd6;
+    cursor: pointer;
+    box-shadow: 2px 3px 3px #0a0f1b;
+}
+
+ nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+main {
+   /* width: 100vw;*/
+    /*flex-grow: 1;*/
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/restaurant.png');
+    background-position: center;
+    filter: blur(3px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.title {
+    width: 40rem;
+    text-align: center;
+    margin: 30vh auto;
+    z-index: 2;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #f3ebe7;
+    font-size: 52px;
+    font-family: 'PlayfairDisplaySC-Bold', sans-serif;
+    text-shadow: 2px 10px 10px  #292724;
+}
+
+.container {
+    width: 60vw;
+    height: auto;
+    padding: 20px;
+    background-color: #064e3b;
+    color: #f3f0ee;
+    z-index: 2;
+    margin: 2rem auto 20vh;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 10px 10px hwb(36 14% 84%);
+    font-family: 'PlayfairDisplaySC-Bold', sans-serif;
+    margin-top: 0;
+    margin-bottom: 5rem;
+}
+
+h3 {
+    font-family: 'AkayaTelivigala-Regular';
+}
+
+.content-container {
+    width: 60vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+#para {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+ 
+.card {
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.card figure {
+    width: 90%;
+    height: 60% ;
+    margin: auto;
+    border-top-right-radius: 5px ;
+    border-top-left-radius: 5px;
+}
+
+.card > figure > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    border-top-right-radius: 5px ;
+    border-top-left-radius: 5px;
+}
+
+.card div {
+    padding: 10px;
+    height: 40%;
+    
+}
+
+.finaly {
+    margin-top: 3rem;
+}
+
+.finaly h3 {
+    font-family: 'NotoSerif';
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+footer {
+    width: 100vw;
+    padding: 20px 45px;
+    background-color: #064e3b;
+    align-self: flex-end;
+    z-index: 3;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #f1e6e0;
+}
