@@ -1,4 +1,4 @@
-import './style.css';
+import '../src/style.css';
 
 function divContent() {
     let div = document.createElement('div');

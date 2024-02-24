@@ -1,5 +1,7 @@
 
 import coverComponent from '../components/coverContent';
+import divContainer from '../components/divContainer';
+import footer from '../components/footer';
 import createInitSection from './intro';
 import './style.css';
 
@@ -20,11 +22,13 @@ function App() {
     nav.appendChild(btnTwo);
 
     const main = document.createElement('main');
-    main.appendChild = (coverComponent());
-    main.appendChild(createInitSection())
+    main.appendChild(coverComponent());
+    main.appendChild(createInitSection());
+    main.appendChild(divContainer());
 
     container.appendChild(header);
     container.appendChild(main);
+    container.appendChild(footer())
 
     return container;
 }
