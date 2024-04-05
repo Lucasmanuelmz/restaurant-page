@@ -31,8 +31,7 @@ function App() {
 
   return container;
 }
-Document,
-  addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const appContainer = App();
     document.body.appendChild(appContainer);
   });
